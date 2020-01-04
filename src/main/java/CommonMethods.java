@@ -10,7 +10,7 @@ public class CommonMethods {
       public static int[] fillArray(int count) {
             int[] array = new int[count];
             for (int i=0; i<count; i++){
-                array[i] = random.nextInt();
+                array[i] = random.nextInt(1000);
             }
             System.out.println(Arrays.toString(array));
             return array;
