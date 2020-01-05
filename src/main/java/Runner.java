@@ -17,5 +17,12 @@ public class Runner extends CommonMethods {
         sort.insertionSort(testArray1);
         finishCountdown();
         System.out.println("Result" + Arrays.toString(testArray1));
+
+        int[] testArray2 = fillArray(100);
+        startCountdown();
+        sort.selectionSort(testArray2);
+        finishCountdown();
+        System.out.println("Result" + Arrays.toString(testArray2));
+
     }
 }
