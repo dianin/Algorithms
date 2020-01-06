@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
+import java.util.stream.IntStream;
 
 public class CommonMethods {
 
@@ -14,6 +15,12 @@ public class CommonMethods {
             }
             System.out.println(Arrays.toString(array));
             return array;
+      }
+
+      public static int [] arrayForSearch () {
+          return IntStream
+                  .range(1,101)
+                  .toArray();
       }
 
       public static void  startCountdown () {
